@@ -52,7 +52,7 @@ ham → non-spam messages
 
 spam → unwanted/advertisement messages
 
-Download them from [Kaggle]([https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset]).
+Download them from [Kaggle](https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset).
 
 ---
 
