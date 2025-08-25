@@ -38,7 +38,7 @@ tfidf_vectorizer = pickle.load(open('vectorizer.pkl', 'rb'))
 model = pickle.load(open('model.pkl', 'rb'))
 
 st.title("Email Spam Classifier")
-input_sms = st.text_input("Enter the content of the email below to classify it as Spam or Not Spam.")
+input_sms = st.text_area("Enter the content of the email below to classify it as Spam or Not Spam.")
 if st.button('Predict'):
 
     # 1. preprocess the input  
@@ -52,3 +52,4 @@ if st.button('Predict'):
         st.header("Spam")
     else:
         st.header("Not Spam")
+
