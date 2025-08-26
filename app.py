@@ -21,8 +21,9 @@ ps = PorterStemmer()
 
 def transform_text(text):
   text = text.lower()
-  text = nltk.word_tokenize(text)
+  text = text.split()
 
+    
   y = []
   for i in text:
     if i.isalnum():
@@ -61,6 +62,7 @@ if st.button('Predict'):
         st.header("Spam")
     else:
         st.header("Not Spam")
+
 
 
 
