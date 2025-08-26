@@ -4,6 +4,11 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import string
+import os
+
+# Point nltk to bundled data
+nltk.data.path.append(os.path.join(os.path.dirname(__file__), "nltk_data"))
+
 nltk.data.path.append("./nltk_data")
 # nltk.download('punkt', quiet=True)
 # nltk.download('stopwords', quiet=True)
@@ -53,6 +58,7 @@ if st.button('Predict'):
         st.header("Spam")
     else:
         st.header("Not Spam")
+
 
 
 
