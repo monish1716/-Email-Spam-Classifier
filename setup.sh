@@ -12,4 +12,3 @@ headless = true\n\
 python3 -m nltk.downloader punkt
 python3 -m nltk.downloader stopwords
 
-python3 generate_data.py
