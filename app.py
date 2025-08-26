@@ -6,12 +6,16 @@ from nltk.stem.porter import PorterStemmer
 import string
 import os
 
-# Point nltk to bundled data
+# Add bundled nltk_data directory
 nltk.data.path.append(os.path.join(os.path.dirname(__file__), "nltk_data"))
 
-nltk.data.path.append("./nltk_data")
-# nltk.download('punkt', quiet=True)
-# nltk.download('stopwords', quiet=True)
+# Download at runtime if missing
+for resource in ["punkt", "stopwords"]:
+    try:
+        nltk.data.find(f"{'tokenizers' if resource == 'punkt' else 'corpora'}/{resource}")
+    except LookupError:
+        nltk.download(resource, quiet=True)
+
 
 
 ps = PorterStemmer()
@@ -58,6 +62,7 @@ if st.button('Predict'):
         st.header("Spam")
     else:
         st.header("Not Spam")
+
 
 
 
