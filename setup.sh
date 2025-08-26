@@ -8,4 +8,8 @@ headless = true\n\
 \n\
 "> ~/.streamlit/config.toml
 
+# Download NLTK data before running the app
+python3 -m nltk.downloader punkt
+python3 -m nltk.downloader stopwords
+
 python3 generate_data.py
