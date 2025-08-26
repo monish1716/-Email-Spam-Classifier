@@ -3,3 +3,4 @@ scikit-learn
 pandas
 numpy
 nltk
+nltk.download('punkt_tab')
