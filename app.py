@@ -4,11 +4,23 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import string
-nltk.download('punkt')
 nltk.download('stopwords')
 # import sklearn
 
 ps = PorterStemmer()
+import nltk
+import ssl
+
+# This block is needed to bypass SSL certificate verification for downloading NLTK data
+try:
+    _create_unverified_https_context = ssl._create_unverified_context
+except AttributeError:
+    pass
+else:
+    ssl._create_default_https_context = _create_unverified_https_context
+
+# Download the 'punkt' tokenizer data
+nltk.download('punkt')
 
 def transform_text(text):
   text = text.lower()
@@ -52,4 +64,5 @@ if st.button('Predict'):
         st.header("Spam")
     else:
         st.header("Not Spam")
+
 
