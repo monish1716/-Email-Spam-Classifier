@@ -4,12 +4,11 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 import string
-nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('stopwords')
 # import sklearn
 
 ps = PorterStemmer()
-
 
 def transform_text(text):
   text = text.lower()
@@ -53,5 +52,3 @@ if st.button('Predict'):
         st.header("Spam")
     else:
         st.header("Not Spam")
-
-
