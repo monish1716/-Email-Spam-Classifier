@@ -78,7 +78,7 @@ After running the Streamlit app:
 ## 📌 Example  
 Here’s how the app looks in action:  
 
-![Movie Recommender Screenshot](images/mrs.png)  
+![Movie Recommender Screenshot](images/email-spam-classifier_demo.png)  
 
 ---
 
