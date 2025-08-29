@@ -6,10 +6,8 @@ from nltk.stem.porter import PorterStemmer
 import string
 
 # Ensure stopwords are available at runtime
-try:
-    nltk.data.find("corpora/stopwords")
-except LookupError:
-    nltk.download("stopwords", quiet=True)
+nltk.download('punkt')
+nltk.download('stopwords')
 
 ps = PorterStemmer()
 
@@ -57,3 +55,4 @@ if st.button("Predict"):
         st.header("Spam")
     else:
         st.header("Not Spam")
+
