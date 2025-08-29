@@ -1,5 +1,5 @@
 # 📧 Email Spam Classifier (Python + ML)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://your-streamlit-app-link-here](https://monish-email-spam-classifier.streamlit.app))  
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://monish-email-spam-classifier.streamlit.app)  
 
 ![Python](https://img.shields.io/badge/Language-Python-blue)
 ![ML](https://img.shields.io/badge/Domain-Machine_Learning-green)
